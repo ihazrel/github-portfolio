@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #000;
+    background: #141414;
     min-height: 200vh;
 }
 header{
@@ -17,7 +21,7 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 40px 100px;
+    padding: 30px 100px;
     z-index: 100000000;
 }
 header .logo{
@@ -31,8 +35,8 @@ header .logo{
     transition: 0.6s;
 }
 header.sticky{
-    padding: 20px 100px;
-    background: #fff;
+    padding: 30px 100px;
+    background: #dfdfdf;
 }
 .navbar ul{
     position: relative;
@@ -50,18 +54,198 @@ header.sticky{
     text-decoration: none;
     color: #fff;
     letter-spacing: 2px;
-    font-weight: 500px;
+    font-weight: 700;
     transition: 0.5s;
 }
-.banner{
+section::before {
+    content: "";
+    display: block;
+    height: 70px; /* Adjust this to match the height of your navbar */
+    margin: -70px 0 0; /* This negative margin is the trick */
+}
+.home{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(image/background.jpg);
+    display: flex;
+    background-image: url('image/background.jpg');
     background-size: cover;
+}
+.home .intro{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    justify-content: center;
+    color: #dbdbdb;
+    font-size: 3.5em;
+}
+.home .intro .highlight{
+    color: #b85f07;
 }
 header.sticky .logo,
 header.sticky ul li a{
     color: #000;
 }
+hr{
+    width: 50%;
+    margin: 50px auto;
+}
+.about{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8%;
+    background-color: #141414;
+}
+#about-main,
+#about{
+    padding: 50px 0;
 
+}
+.about .introduction{
+    padding: 100px 0 0 0;
+}
+.about h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.about h3{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 1.2em;
+    padding: 0 500px;
+}
+.about #description{
+    padding-bottom: 50px;
+}
+.about .education{
+    padding: 50px 0;
+}
+.skills{
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 8%;
+    background-color: #dfdfdf;
+}
+.skills h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px; 
+    margin: 20px;
+    text-align: center;
+    border-radius: 20%;
+    border: 5px solid #000;
+    overflow: hidden;
+}
+.skill-icon {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+.projects{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 8%;
+}
+.projects h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.display {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+}
+.display .image-box {
+    flex: 1;
+    border-radius: 30px 0 0 30px;
+}
+.display .desc-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    background-color: #3b3b3b;
+    padding: 0 50px;
+    margin: 0;
+    border-radius: 0 30px 30px 0;
+}
+.desc-box .button {
+    display: inline-block;
+    text-decoration: none;
+}
+.desc-box h2{
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+.desc-box p{
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.desc-box .button {
+    padding: 10px 20px;
+    background-color: #b85f07;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.contact{
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 8%;
+    background-color: #dfdfdf;
+}
+.contact h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.contact h3{
+    font-size: 1.3em;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
