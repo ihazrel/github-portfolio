@@ -100,8 +100,10 @@ hr{
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    margin-top: 8%;
     background-color: #141414;
+}
+#about-main{
+    margin-top: 8%;
 }
 #about-main,
 #about{

@@ -9,3 +9,16 @@ var typed = new Typed('#highlight', {
     backSpeed: 60,
     loop: true
      });
+
+function scrollToElement(event, id, offset) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    const element = document.getElementById(id);
+    if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+}
