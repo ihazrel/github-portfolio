@@ -5,7 +5,7 @@ html{
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Poppins', sans-serif;
 }
 body{
@@ -95,8 +95,8 @@ header.sticky ul li a{
     color: #000;
 }
 hr{
-    width: 50%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 50px 0;
 }
 
 /* About */
@@ -113,14 +113,11 @@ hr{
 }
 #about-main{
     margin-top: 8%;
+    padding: 0 0 50px 0;
 }
-#about-main,
 #about{
     padding: 50px 0;
 
-}
-.about .introduction{
-    padding: 100px 0 0 0;
 }
 .about h2{
     font-weight: 700;
@@ -133,7 +130,7 @@ hr{
 }
 .about p{
     font-size: 1.2em;
-    padding: 0 500px;
+    margin: 0 20%;
 }
 .about #description{
     padding-bottom: 50px;
